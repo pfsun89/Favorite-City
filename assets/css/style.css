@@ -1,0 +1,100 @@
+html {
+    /* Set the box-sizing model to border-box for all elements in the document. -Paul */
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+/* Style the body. -Paul */
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    font-size: 100%;
+    background-color: #035181;
+    /* Set margins to zero to clear our the browser's default margin setting. -Paul */
+    margin: 0;
+}
+
+header {
+    background-color: #0d360d;
+    padding-bottom: 20px;
+}
+
+li {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Made the navigation links look like buttons. -Paul */
+.nav-btn {
+    background-color: #d3ffc1;
+    color: #0d360d;
+    padding: 15px 25px;
+    text-decoration: none;
+    border: outset;
+}
+
+.nav-btn:hover {
+    background-color: #75B459;
+}
+
+.nav-btn:active {
+    border: inset;
+}
+
+/* Style the article. -Paul */
+article {
+    background-color: #eee;
+    width: 50%;
+    margin: auto;
+    padding: 3%;
+}
+
+/* Style first heading. -Paul */
+h1 {
+    font-weight: bold;
+    font-size: 7em;
+    color: #d3ffc1;
+    text-align: center;
+    text-shadow: .05em .05em .1em #75B459;
+    margin: 0;
+    padding: .5em;
+}
+
+/* Style second heading. -Paul */
+h2 {
+    text-align: center;
+    color: #d3ffc1;
+    margin-top: -20px;
+}
+
+/* Made list items display side by side with some spacing and removed bullet points. -Paul */
+li {
+    list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Centered an assortment of elements. -Paul */
+h1, h2, h3, nav, figure, footer {
+    text-align: center;
+}
+
+img {
+    width: 70%;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 2px dashed;
+}
+
+h3 {
+    border: 2px double;
+}
+
+footer {
+    margin-top: 3em;
+}
