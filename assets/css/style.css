@@ -28,13 +28,12 @@ body {
 /* Style the header. -Paul */
 header {
     background-color: #0d360d;
-    padding-bottom: 20px;
 }
 
 /* Give navigational list items some space. -Paul */
 .button {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 /* Made the navigation links look like buttons. -Paul */
@@ -59,7 +58,7 @@ header {
 article {
     background-color: #eee;
     width: 50%;
-    margin: auto;
+    margin: -16px auto auto auto;
     padding: 3%;
 }
 
@@ -79,7 +78,7 @@ h1 {
 /* Style second heading. -Paul */
 h2 {
     text-align: center;
-    color: #d3ffc1;
+    color: #0d360d;
     margin-top: -20px;
 }
 
@@ -88,6 +87,11 @@ h2 {
     list-style-type: none;
     padding: 10px;
     display: inline-block;
+}
+
+.link {
+    border-bottom: 2px dashed;
+    color: #035181;
 }
 
 /* Centered an assortment of elements. -Paul */
