@@ -1,5 +1,5 @@
+/* Set the box-sizing model to border-box for all elements in the document. -Paul */
 html {
-    /* Set the box-sizing model to border-box for all elements in the document. -Paul */
     box-sizing: border-box;
 }
 
@@ -9,20 +9,30 @@ html {
 
 /* Style the body. -Paul */
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     font-size: 100%;
+    /* Fallback setting for background color. -Paul */
     background-color: #035181;
+    /* Set background gradient, taken from https://projects.verou.me/css3patterns/ */
+    background-color: #035181;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, .07) 50%, transparent 50%),
+        linear-gradient(90deg, rgba(255, 255, 255, .13) 50%, transparent 50%),
+        linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .17) 50%),
+        linear-gradient(90deg, transparent 50%, rgba(255, 255, 255, .19) 50%);
+    background-size: 13px, 29px, 37px, 53px;
     /* Set margins to zero to clear our the browser's default margin setting. -Paul */
     margin: 0;
 }
 
+/* Style the header. -Paul */
 header {
     background-color: #0d360d;
     padding-bottom: 20px;
 }
 
-li {
+/* Give navigational list items some space. -Paul */
+.button {
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -36,6 +46,7 @@ li {
     border: outset;
 }
 
+/* Change color when hovering over navigation buttons. -Paul */
 .nav-btn:hover {
     background-color: #75B459;
 }
@@ -54,13 +65,15 @@ article {
 
 /* Style first heading. -Paul */
 h1 {
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 7em;
     color: #d3ffc1;
     text-align: center;
-    text-shadow: .05em .05em .1em #75B459;
+    text-shadow: .05em .05em .1em #358b0f;
     margin: 0;
     padding: .5em;
+    -webkit-text-stroke: 1px #003557;
 }
 
 /* Style second heading. -Paul */
@@ -71,7 +84,7 @@ h2 {
 }
 
 /* Made list items display side by side with some spacing and removed bullet points. -Paul */
-li {
+.button {
     list-style-type: none;
     padding: 10px;
     display: inline-block;
@@ -82,19 +95,37 @@ h1, h2, h3, nav, figure, footer {
     text-align: center;
 }
 
+/* Adjust the size of the images. -Paul */
 img {
     width: 70%;
+    margin-top: 1.5em;
 }
 
+/* Style links. -Paul */
 a {
     text-decoration: none;
     border-bottom: 2px dashed;
 }
 
+/* Separate third heading from text below. -Paul */
 h3 {
-    border: 2px double;
+    border-bottom: 2px double;
+    margin-top: 1.5em;
+    color: #0d360d;
 }
 
+/* Give the paragraphs some space. -Paul */
+p {
+    padding: 0 5em 0 5em;
+    margin-top: 2em;
+}
+
+li {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* Move footer downward. -Paul */
 footer {
     margin-top: 3em;
 }
